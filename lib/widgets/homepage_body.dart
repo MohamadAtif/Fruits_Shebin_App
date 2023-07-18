@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../screens/market_page.dart';
+import '../screens/login_in.dart';
 import 'custom_button.dart';
 
 
@@ -16,9 +15,9 @@ class HomePageBody extends StatelessWidget {
     const   Image(image:AssetImage('images/home.jpg')),
      CustomButton(onTap: () {
        Navigator.push(context,MaterialPageRoute(builder: (context) {
-         return const MarketPage();
+         return const loginPage();
        },));
-       },),
+       }, text: 'Get Started',),
      
       ],
     );

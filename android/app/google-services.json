@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "48649360062",
+    "project_id": "fruits-shebin",
+    "storage_bucket": "fruits-shebin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48649360062:android:627c8671d1b7063f0c04ef",
+        "android_client_info": {
+          "package_name": "com.example.fruit_shebin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48649360062-fh21km98oebdonecuog6iuk0ts634o9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSxJPx02pdTbiTWSu6qcxGSDwR43mMljA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48649360062-fh21km98oebdonecuog6iuk0ts634o9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

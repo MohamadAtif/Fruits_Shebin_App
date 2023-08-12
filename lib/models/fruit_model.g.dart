@@ -17,10 +17,10 @@ class FruitModelAdapter extends TypeAdapter<FruitModel> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return FruitModel(
-      color: fields[3] as int,
+      color: fields[3] as String,
       image: fields[0] as String,
       title: fields[1] as String,
-      price: fields[2] as double,
+      price: fields[2] as String,
     );
   }
 

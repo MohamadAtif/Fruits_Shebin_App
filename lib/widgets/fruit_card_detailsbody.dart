@@ -14,10 +14,12 @@ class FruitCardDetails extends StatelessWidget {
         
       height: 180,
       width:MediaQuery.of(context).size.width*.4 ,
-      child: const Card(
-        color:  Colors.white,
+      child:  Card(
+       shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(25.0),),
+        color:  Colors.white60,
         elevation: 7,
-        child: Padding(
+        child:const Padding(
           padding: EdgeInsets.all(10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,

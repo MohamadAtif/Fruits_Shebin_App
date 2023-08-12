@@ -15,7 +15,7 @@ class HomePageBody extends StatelessWidget {
     const   Image(image:AssetImage('images/home.jpg')),
      CustomButton(onTap: () {
        Navigator.push(context,MaterialPageRoute(builder: (context) {
-         return const loginPage();
+         return  loginPage();
        },));
        }, text: 'Get Started',),
      

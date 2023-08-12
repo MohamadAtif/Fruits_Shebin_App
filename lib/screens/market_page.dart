@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../consts.dart';
+import 'add_new_fruit.dart';
 import 'fruits_page.dart';
 
 class MarketPage extends StatelessWidget {
@@ -16,7 +18,14 @@ class MarketPage extends StatelessWidget {
       )),
           body: GridView.builder(
          gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), 
-         itemBuilder: (context, index) =>const FruitCard(),)
+         itemBuilder: (context, index) =>const FruitCard(),),
+         floatingActionButton:GestureDetector(
+          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>const AddNewFruit(),)),
+          
+          child: const CircleAvatar(backgroundColor: kAppbarColor,radius: 35,child: Icon(Icons.add),))  ,
+         
+         
     );
+    
   }
   }

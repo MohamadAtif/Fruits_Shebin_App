@@ -35,23 +35,23 @@ class RegisterPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  CustomTextField(labelText: 'User Name', obscureText: false),
+                  CustomTextField(labelText: 'User Name', obscureText: false, icon: Icons.person,),
                   CustomTextField(
                     labelText: 'Email',
                     obscureText: false,
                     onChanged: (data) {
                       emailAddress = data;
-                    },
+                    }, icon:Icons.email,
                   ),
                   CustomTextField(
                     labelText: 'Password',
                     obscureText: true,
                     onChanged: (data) {
                       password = data;
-                    },
+                    }, icon: Icons.lock,
                   ),
                   CustomTextField(
-                      labelText: 'Phone Number', obscureText: false),
+                      labelText: 'Phone Number', obscureText: false, icon: Icons.phone,),
                   CustomButton(
                       onTap: () async {
                         if (formKey.currentState!.validate()) {

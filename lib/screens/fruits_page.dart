@@ -24,20 +24,11 @@ class FruitCard extends StatelessWidget {
           child: const FruitCardDetails(),
         ),
         
-      // Positioned(
-      //   top: -35,
-      //   bottom:60,
-      //   left: 30,
-      //   right: 30,
-      //   child: Image.asset('images/peach.png'),
-      //   // ,cacheHeight:70,
-      //   // cacheWidth:90,
-        
-      //   ),
-     
     ]
+    
     )
-      
+     
     );
+    
   }
 }

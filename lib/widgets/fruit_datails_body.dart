@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_shebin/consts.dart';
 
+import 'custom_post.dart';
+
 class FruitDetailsBody extends StatelessWidget {
   const FruitDetailsBody({
     super.key,
@@ -8,8 +10,33 @@ class FruitDetailsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: 
-    Column(
+    return const SafeArea(child: CustomScrollView(
+      slivers: [
+           SliverToBoxAdapter(
+          child: FruitBodydetails(),
+             ),
+        // SliverToBoxAdapter(
+        //   child: ListView.builder(
+        //     itemBuilder: (context, index) =>
+        //   const CustomPostReview(),)
+        // )
+      ],
+      
+    )
+    
+    
+    );
+  }
+}
+
+class FruitBodydetails extends StatelessWidget {
+  const FruitBodydetails({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
       children: [
          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,16 +81,16 @@ class FruitDetailsBody extends StatelessWidget {
                          const Text("You Can also read peaple's Review",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,
                          color: Colors.black),textAlign: TextAlign.left,),
                         
-                         const SizedBox(height: 8,),
+                         const SizedBox(height: 15,),
+                         const CustomPostReview(),
+                         const CustomPostReview()
+                     
+                        
 
                          // اعمل ليستة ريفيو بكلام الناس 
                         //  const   SizedBox(height: 145,child:  FeauturedBooksListView(),)
 
       ],
-    )
-       
-    
-    
     );
   }
 }
